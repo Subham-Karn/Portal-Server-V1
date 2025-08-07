@@ -7,7 +7,7 @@ const connectDB = require('./src/db/dbConfig');
 const AuthRoute = require('./src/routes/AuthRoutes');
 const port = process.env.PORT;
 app.use(cors({
-  origin: ['http://localhost:5173' , 'https://frontend-for-portal.onrender.com/'],
+  origin: ['https://frontend-for-portal.onrender.com/', 'http://localhost:3000'],
   credentials: true, // important if you're using cookies or Authorization headers
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
